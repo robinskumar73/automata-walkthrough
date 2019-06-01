@@ -1,6 +1,6 @@
 {
   "name": "automata-walkthrough",
-  "version": "2.0.6",
+  "version": "2.0.7",
   "description": "Create guided tours for your apps",
   "author": "Gil Barbara <gilbarbara@gmail.com>",
   "repository": {
@@ -34,12 +34,12 @@
     "prop-types": "^15.0.0"
   },
   "dependencies": {
+    "automata-floater": "^0.6.5",
     "deep-diff": "^1.0.2",
     "deepmerge": "^3.1.0",
     "exenv": "^1.2.2",
     "is-lite": "^0.2.2",
     "nested-property": "^0.0.7",
-    "automata-floater": "^0.6.4",
     "react-is": "^16.8.1",
     "scroll": "^3.0.0",
     "scroll-doc": "^0.2.1",
