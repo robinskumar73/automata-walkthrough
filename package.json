@@ -1,5 +1,5 @@
 {
-  "name": "react-joyride",
+  "name": "automata-walkthrough",
   "version": "2.0.5",
   "description": "Create guided tours for your apps",
   "author": "Gil Barbara <gilbarbara@gmail.com>",
@@ -39,7 +39,7 @@
     "exenv": "^1.2.2",
     "is-lite": "^0.2.2",
     "nested-property": "^0.0.7",
-    "react-floater": "^0.6.4",
+    "automata-floater": "^0.6.4",
     "react-is": "^16.8.1",
     "scroll": "^3.0.0",
     "scroll-doc": "^0.2.1",
@@ -124,8 +124,7 @@
     "test:watch": "jest --watch --verbose",
     "format": "prettier \"**/*.{js,jsx,ts,tsx}\" --write",
     "validate": "npm run lint && npm run test:coverage && flow && npm run build && npm run bundlesize",
-    "bundlesize": "bundlesize",
-    "prepublishOnly": "npm run validate"
+    "bundlesize": "bundlesize"
   },
   "bundlesize": [
     {
@@ -138,10 +137,7 @@
     }
   ],
   "husky": {
-    "hooks": {
-      "post-merge": "node tools update",
-      "pre-commit": "node tools upstream && lint-staged && flow"
-    }
+    "hooks": {}
   },
   "lint-staged": {
     "linters": {

@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Floater from 'react-floater';
+import Floater from 'automata-floater';
 import treeChanges from 'tree-changes';
 import is from 'is-lite';
 
@@ -255,6 +255,12 @@ export default class JoyrideStep extends React.Component {
 
     return !!(hideBeacon(step) || lifecycle === LIFECYCLE.TOOLTIP);
   }
+
+
+  onTargetChange = ()=>{
+    console.log("Changing target");
+  }
+
 
   render() {
     const { continuous, debug, helpers, index, lifecycle, size, step } = this.props;
